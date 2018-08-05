@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/line_more_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+   <include 
+       android:id="@+id/tab_more_title"
+       layout="@layout/include_tab_home_title"/>
+ 
+  <LinearLayout 
+      android:id="@+id/linear_personal_info"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:layout_marginTop="20dp"
+      
+      >
+      <TextView 
+          android:id="@+id/txt_personal_info"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="20sp"
+          android:layout_marginLeft="20dp"
+          android:gravity="left"
+          android:text="@string/personal_info"
+          />
+      <TextView  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"  
+        android:layout_weight="1" />  
+      <ImageButton 
+          android:id="@+id/img_personal_info"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:gravity="right"
+          android:src="@drawable/btn_tab_more"
+          android:background="@null"
+          android:layout_marginRight="20dp"/>       
+  </LinearLayout>
+    <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:background ="@drawable/seperate_line"/>
+   <LinearLayout 
+       android:id="@+id/linear_about"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:layout_marginTop="20dp"
+      >
+      <TextView 
+          android:id="@+id/txt_about"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="20sp"
+          android:layout_marginLeft="20dp"
+          android:gravity="left"
+          android:text="@string/tab_more_about"
+          />
+          <TextView  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"  
+        android:layout_weight="1" />  
+      <ImageButton 
+          android:id="@+id/img_about"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:gravity="right"
+           android:src="@drawable/btn_tab_more"
+           android:background="@null"
+           android:layout_marginRight="20dp"/>        
+  </LinearLayout>
+      <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:background ="@drawable/seperate_line"/>
+  <LinearLayout 
+      android:id="@+id/linear_setting"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:layout_marginTop="20dp"
+      >
+      <TextView 
+          android:id="@+id/txt_settting"
+         android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="20sp"
+          android:layout_marginLeft="20dp"
+          android:gravity="left"
+          android:text="@string/tab_more_setting"
+          />
+          <TextView  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"  
+        android:layout_weight="1" />  
+      <ImageButton 
+          android:id="@+id/img_setting"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:gravity="right"
+           android:src="@drawable/btn_tab_more"
+           android:background="@null"
+           android:layout_marginRight="20dp"/>
+         
+  </LinearLayout>
+  <View
+      android:layout_width="fill_parent"
+      android:layout_height="2dip"
+      android:background ="@drawable/seperate_line"/>
+  <LinearLayout 
+      android:id="@+id/linear_exit"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:layout_marginTop="20dp"
+      >
+      <TextView 
+          android:id="@+id/txt_exit"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="20dp"
+          android:textSize="20sp"
+          android:gravity="left"
+          android:text="@string/tab_more_exit"/>
+      <TextView  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"  
+        android:layout_weight="1" />  
+      <ImageButton 
+          android:id="@+id/img_exit"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginRight="20dp"
+          android:gravity="right"
+          android:src="@drawable/btn_tab_more"
+          android:background="@null"/>
+         
+  </LinearLayout>
+  <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:background ="@drawable/seperate_line" />
+  
+  
+</LinearLayout>

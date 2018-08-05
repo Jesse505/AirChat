@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:gravity="center"
+	android:layout_gravity="center"
+	android:minHeight="60dip"
+	android:orientation="vertical"
+	android:paddingBottom="4dip"
+	android:paddingTop="4dip" >
+
+	<LinearLayout
+	     android:id="@+id/rel_call_send"
+	     android:layout_width="fill_parent"
+		 android:layout_height="wrap_content" 
+		 >
+		 
+		<TextView
+		    android:id="@+id/txt_name"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:gravity="left"
+		    android:layout_marginLeft="20dp"
+		    android:layout_alignParentLeft ="true"
+		    android:textSize="16sp"
+		    android:textColor="#ffffff"
+		    ></TextView>
+		<TextView  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"  
+        android:layout_weight="1" />
+		<!--add by lss for declear calltype (audio or video)  -->  
+        <ImageView
+		    android:id="@+id/img_call_type"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="20dp"
+		    android:gravity="right"
+		    android:layout_marginRight="5dp"		    
+		    ></ImageView>
+        <!--add end-->
+		<ImageView
+		    android:id="@+id/img_status"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="5dp"
+		    android:gravity="right"
+		    android:layout_marginRight="20dp"	    
+		    ></ImageView>
+	</LinearLayout>
+	
+	<LinearLayout
+	     android:layout_width="fill_parent"
+		 android:layout_height="wrap_content"
+		  >
+		<TextView 
+		    android:id="@+id/txt_call_time"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:textSize="16sp"
+		    android:gravity="left"
+		    android:layout_marginLeft="20dp"
+		    android:layout_alignParentLeft ="true"
+		    android:textColor="#ffffff"
+		    ></TextView>
+		<TextView  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"  
+        android:layout_weight="1" />  
+		<TextView 
+		    android:id="@+id/txt_date"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:textSize="16sp"
+		    android:layout_marginLeft="20dp"
+		    android:gravity="right"
+		    android:layout_marginRight="20dp"
+		    android:textColor="#ffffff"
+		    ></TextView>
+	</LinearLayout>
+	 <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:background ="@drawable/seperate_line"/>
+
+</LinearLayout>
