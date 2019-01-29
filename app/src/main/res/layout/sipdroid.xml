@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * Copyright (C) 2009 The Sipdroid Open Source Project
+ * 
+ * This file is part of Sipdroid (http://www.sipdroid.org)
+ * 
+ * Sipdroid is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 3 of the License, or
+ * (at your option) any later version.
+ * 
+ * This source code is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with this source code; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+/////////////////////////////////////////////////////////////////////
+// these are the main definitions of Sipdroid
+// for modifying them additional terms according to section 7, GPL apply
+// see ADDITIONAL_TERMS.txt
+/////////////////////////////////////////////////////////////////////
+ -->
+<RelativeLayout 
+     xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:gravity="center"
+	android:layout_gravity="center"
+	android:background="@drawable/bg_screen">
+
+  <RelativeLayout
+      android:id="@+id/login_div"
+      android:layout_width="357dp"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:layout_centerInParent="true"
+      android:layout_centerVertical="true">
+      
+
+    <TextView
+            android:id="@+id/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="447dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="318dp"
+            android:layout_marginTop="18dp"
+            android:text="@string/app_name"
+            android:textColor="#ffffff"
+            android:textSize="26sp"
+            android:visibility="gone" />
+
+      <EditText
+            android:id="@+id/et_name"
+            android:layout_width="307dp"
+            android:layout_height="36dp"
+            android:layout_marginBottom="305dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="48dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/edt_bg"
+            android:textColorHint="#bDbDbD"
+            android:hint="@string/screen_login_name"
+            android:paddingLeft="5dp"
+            android:textColor="#ffffff"
+            android:textSize="20sp" 
+            android:maxLength="10">
+        </EditText>
+
+        <EditText
+            android:id="@+id/et_number"
+            android:layout_width="307dp"
+            android:layout_height="36dp"
+            android:layout_marginBottom="84dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="48dp"
+            android:layout_marginTop="62dp"
+            android:paddingLeft="5dp"
+            android:background="@drawable/edt_bg"
+            android:inputType="number" 
+            android:hint="@string/screen_login_number"
+            android:textColorHint="#bDbDbD"
+            android:textColor="#ffffff"
+            android:textSize="20sp" 
+            android:maxLength="5"/>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="100dp"
+            android:layout_height="52dp"
+            android:layout_marginBottom="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="109dp"
+            android:background="@drawable/btn_login"
+            android:text="@string/screen_login_login"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+ 
+
+<RelativeLayout
+    android:layout_width="fill_parent"
+   	android:layout_height="wrap_content"> 
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="100dp"
+            android:layout_height="52dp"
+            android:layout_alignParentRight="true"
+    		android:layout_alignParentBottom="true"
+            android:background="@drawable/btn_login"
+            android:text="@string/screen_login_cancel"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:onClick="goSettings" 
+            android:visibility="invisible"/>
+    </RelativeLayout>
+
+              <Button
+				android:id="@+id/contacts_button"
+				android:drawableLeft="@drawable/ic_menu_dial_pad"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:visibility="gone"/>
+                <org.sipdroid.sipua.ui.InstantAutoCompleteTextView
+				android:id="@+id/txt_callee2"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:singleLine="true"
+				android:hint="@string/hint2"
+				android:inputType="phone"
+				android:imeOptions="actionSend"
+				android:visibility="gone"/>
+			<org.sipdroid.sipua.ui.InstantAutoCompleteTextView
+				android:id="@+id/txt_callee"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:singleLine="true"
+				android:hint="@string/hint"
+				android:inputType="textEmailAddress"
+				android:imeOptions="actionSend"
+				android:visibility="gone"/>
+			<EditText 
+			    android:id="@+id/txt_input"
+			    android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:singleLine="true"
+				android:visibility="gone"/>
+			<Button 
+			    android:id="@+id/btn_send"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:visibility="gone"/>
+			<Button android:id="@+id/create_button" 
+	            android:layout_width="wrap_content" 
+	            android:layout_height="wrap_content" 
+				android:layout_gravity="center"
+	            android:text="@string/menu_create"
+	            android:visibility="gone" />
+			
+</RelativeLayout>
+

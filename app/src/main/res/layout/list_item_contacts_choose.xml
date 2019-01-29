@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_layout_persons"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/btn_select_contacts">
+
+     <CheckBox
+        android:id="@+id/id_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false" 
+        android:background="@drawable/btn_contacts_selected"
+        android:button="@drawable/btn_contacts_selected"/>
+     
+     <TextView 
+         android:id="@+id/tv_group_master"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerVertical="true"
+         android:text="@string/text_chat_group_master"
+         android:layout_alignParentLeft="true"
+         android:layout_marginLeft="20dp"
+         android:visibility="gone"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal"
+        android:layout_centerVertical="true" >
+
+        <ImageView
+            android:id="@+id/id_image_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_user_avatar" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" 
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/id_text_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:singleLine="true"/>
+
+            <TextView
+                android:id="@+id/id_text_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

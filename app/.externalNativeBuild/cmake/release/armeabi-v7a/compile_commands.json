@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/Users/zhaoyifei/github/StudioProjects/AirChat/app/.externalNativeBuild/cmake/release/armeabi-v7a",
+  "command": "/Users/zhaoyifei/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=armv7-none-linux-androideabi17 --gcc-toolchain=/Users/zhaoyifei/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/zhaoyifei/Library/Android/sdk/ndk-bundle/sysroot  -Dnative_lib_EXPORTS -isystem /Users/zhaoyifei/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /Users/zhaoyifei/Library/Android/sdk/ndk-bundle/sources/android/support/include -isystem /Users/zhaoyifei/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /Users/zhaoyifei/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11  -Oz -DNDEBUG  -fPIC   -o CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o -c /Users/zhaoyifei/github/StudioProjects/AirChat/app/src/main/cpp/native-lib.cpp",
+  "file": "/Users/zhaoyifei/github/StudioProjects/AirChat/app/src/main/cpp/native-lib.cpp"
+}
+]

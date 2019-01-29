@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/Users/zhaoyifei/github/StudioProjects/AirChat/app/.externalNativeBuild/cmake/debug/arm64-v8a",
+  "command": "/Users/zhaoyifei/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=aarch64-none-linux-android21 --gcc-toolchain=/Users/zhaoyifei/Library/Android/sdk/ndk-bundle/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/zhaoyifei/Library/Android/sdk/ndk-bundle/sysroot  -Dnative_lib_EXPORTS -isystem /Users/zhaoyifei/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /Users/zhaoyifei/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include  -isystem /Users/zhaoyifei/Library/Android/sdk/ndk-bundle/sysroot/usr/include/aarch64-linux-android -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11  -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o -c /Users/zhaoyifei/github/StudioProjects/AirChat/app/src/main/cpp/native-lib.cpp",
+  "file": "/Users/zhaoyifei/github/StudioProjects/AirChat/app/src/main/cpp/native-lib.cpp"
+}
+]

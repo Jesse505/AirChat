@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:layout_gravity="center" >
+
+   <include
+       android:id="@+id/tab_contact_title"
+       layout="@layout/include_tab_home_title" />
+       
+       <Button 
+        android:id="@+id/btn_groupchat"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_chat_groupchat"
+        android:visibility="gone"/>
+       
+      <Button 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="send"
+        android:visibility="gone"/>
+      
+      <Button 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="receive"
+        android:visibility="gone"/>
+
+ 
+    <TableLayout  android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center" >
+            
+            <EditText 
+                android:id="@+id/search_contact_person"
+                android:hint="@string/search_contact_person"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:textColor="#ffffff"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="20sp"
+                android:textColorHint="#bDbDbD"
+                android:background="@drawable/search_contact_person"/>
+        </TableRow>
+         <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center" >
+             <ListView  
+		        android:id="@+id/content_lv"  
+		        android:layout_width="match_parent"  
+		        android:layout_height="wrap_content"
+		        android:visibility="gone"> 
+    		</ListView>  
+        </TableRow>
+    </TableLayout>
+    <TableLayout
+        		android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" >
+        <TableRow 
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <LinearLayout 
+               android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:gravity="left"
+                android:layout_marginLeft="20dp">
+            <Button
+                android:id="@+id/recent_contact_person"
+                android:text="@string/recent_contact_person"
+                android:layout_width="125dp"
+                android:layout_height="45dp"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                android:background="@drawable/btnsearch_contacts">            
+            </Button>  
+   			</LinearLayout>
+   			<LinearLayout 
+   			    android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:gravity="right"
+                android:layout_marginRight="20dp">
+            <Button
+                android:id="@+id/all_contact_person"
+                android:layout_width="125dp"
+                android:layout_height="45dp"
+                android:text="@string/all_contact_person"
+                android:background="@drawable/btnsearch_contacts"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+			</LinearLayout>
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout 
+        	android:layout_width="wrap_content"
+	        android:layout_height="wrap_content">
+       <TableRow 
+            android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="center">
+        <GridView 
+	        android:id="@+id/gridview"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:numColumns="auto_fit"
+	        android:columnWidth="80dp"
+	        android:stretchMode="columnWidth">
+        </GridView>
+       </TableRow>
+    </TableLayout>
+</LinearLayout>

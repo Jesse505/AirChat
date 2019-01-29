@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/message_plus_layout_bar"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#2a3d2f"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="horizontal"
+    android:visibility="gone" >
+
+    <LinearLayout
+        android:id="@+id/message_plus_layout_picture"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="5"
+        android:background="@null"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="5dip" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_chat_pulsbar_pic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_message_plus_image"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+     
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/message_plus_layout_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="5"
+        android:background="@null"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="5dip" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_chat_pulsbar_camera" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_message_plus_take_picture"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+    
+    </LinearLayout>   
+
+    <LinearLayout
+        android:id="@+id/message_plus_layout_file"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="5"
+        android:background="@null"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="5dip" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_chat_pulsbar_file" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_message_plus_file"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+   
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/message_plus_layout_ptt"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="5"
+        android:background="@null"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="5dip" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_chat_plusbar_ptt" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_ptt"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+   
+    </LinearLayout>
+
+</LinearLayout>

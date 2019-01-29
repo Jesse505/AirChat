@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+	android:layout_height="100dp"
+	android:background="@drawable/bg_chat_repeat" >
+	<RelativeLayout 
+	    android:id="@+id/relative_call_status_1"
+	    android:layout_width="fill_parent"
+	    android:layout_height="50dp" >
+	     <TextView
+	         android:id="@+id/txt_name"
+			 android:layout_width="fill_parent"
+			 android:layout_height="wrap_content"
+			 android:layout_marginLeft="0dp"
+	         ></TextView>
+         <ImageView
+             android:id="@+id/img_call_status"
+			 android:layout_width="fill_parent"
+			 android:layout_height="wrap_content"
+			 android:layout_marginRight="0dp"
+			 android:background="@null"
+			 android:layout_toRightOf="@+id/txt_name"
+             ></ImageView>
+	</RelativeLayout>
+    <RelativeLayout 
+        android:id="@+id/relative_call_status_2"
+	    android:layout_width="fill_parent"
+	    android:layout_height="50dp"
+	    android:layout_below="@+id/relative_call_status_1"
+	    >
+		<TextView
+		     android:id="@+id/txt_total_time"
+			 android:layout_width="fill_parent"
+			 android:layout_height="wrap_content"
+			 android:layout_marginLeft="0dp"
+		    ></TextView>
+		<TextView
+		    android:id="@+id/txt_time"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="0dp"
+			android:layout_toRightOf="@+id/txt_total_time"
+		    ></TextView>
+	</RelativeLayout>
+</RelativeLayout>
