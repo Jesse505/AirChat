@@ -114,8 +114,6 @@ public class RtpStreamSender extends Thread {
 	/**
 	 * Constructs a RtpStreamSender.
 	 * 
-	 * @param input_stream
-	 *            the stream to be sent
 	 * @param do_sync
 	 *            whether time synchronization must be performed by the
 	 *            RtpStreamSender, or it is performed by the InputStream (e.g.
@@ -287,7 +285,10 @@ public class RtpStreamSender extends Thread {
 		int dtframesize = 4;
 		
 		android.os.Process.setThreadPriority(android.os.Process.THREAD_PRIORITY_URGENT_AUDIO);
+
+		//解码速率
 		mu = p_type.codec.samp_rate()/8000;
+		//最小缓冲大小
 		int min = AudioRecord.getMinBufferSize(p_type.codec.samp_rate(), 
 				AudioFormat.CHANNEL_CONFIGURATION_MONO, 
 				AudioFormat.ENCODING_PCM_16BIT);
@@ -308,6 +309,7 @@ public class RtpStreamSender extends Thread {
 		frame_rate = p_type.codec.samp_rate()/frame_size;
 		long frame_period = 1000 / frame_rate;
 		frame_rate *= 1.5;
+		//发送包缓冲区
 		byte[] buffer = new byte[frame_size + 12];
 		RtpPacket rtp_packet = new RtpPacket(buffer, 0);
 		rtp_packet.setPayloadType(p_type.number);
@@ -329,7 +331,9 @@ public class RtpStreamSender extends Thread {
 			if (!Sipdroid.release) e2.printStackTrace();
 		}
 		p_type.codec.init();
+		//循环发送，先录制，再发送
 		while (running) {
+			 //录制没有或已经改变
 			 if (changed || record == null) {
 				if (record != null) {
 					record.stop();
@@ -351,16 +355,19 @@ public class RtpStreamSender extends Thread {
 				record.startRecording();
 				micgain = (int)(Settings.getMicGain()*10);
 			 }
+			 //静音或挂断则停止
 			 if (muted || Receiver.call_state == UserAgent.UA_STATE_HOLD ) {
 				if (Receiver.call_state == UserAgent.UA_STATE_HOLD)
 					RtpStreamReceiver.restoreMode();
 				record.stop();
+				//延时
 				while (running && (muted || Receiver.call_state == UserAgent.UA_STATE_HOLD)){
 					try {
 						sleep(1000);
 					} catch (InterruptedException e1) {
 					}
 				}
+				//开始录制
 				record.startRecording();
 			 }
 			 //DTMF change start

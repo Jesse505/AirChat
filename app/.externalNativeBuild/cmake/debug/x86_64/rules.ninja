@@ -42,7 +42,7 @@ rule CXX_SHARED_LIBRARY_LINKER__native-lib
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /Users/zhaoyifei/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -H/Users/zhaoyifei/github/StudioProjects/AirChat/app -B/Users/zhaoyifei/github/StudioProjects/AirChat/app/.externalNativeBuild/cmake/debug/x86_64
+  command = /Users/zhaoyifei/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -H/Users/zhaoyifei/Downloads/github/AirChat/app -B/Users/zhaoyifei/Downloads/github/AirChat/app/.externalNativeBuild/cmake/debug/x86_64
   description = Re-running CMake...
   generator = 1
 

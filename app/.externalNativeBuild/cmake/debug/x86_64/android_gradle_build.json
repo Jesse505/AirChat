@@ -1,31 +1,31 @@
 {
   "stringTable": {
-    "0": "/Users/zhaoyifei/github/StudioProjects/AirChat/app/.externalNativeBuild/cmake/debug/x86_64",
+    "0": "/Users/zhaoyifei/Downloads/github/AirChat/app/.externalNativeBuild/cmake/debug/x86_64",
     "1": "--target=x86_64-none-linux-android21 --gcc-toolchain=/Users/zhaoyifei/Library/Android/sdk/ndk-bundle/toolchains/x86_64-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/zhaoyifei/Library/Android/sdk/ndk-bundle/sysroot -Dnative_lib_EXPORTS -isystem /Users/zhaoyifei/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/include -isystem /Users/zhaoyifei/Library/Android/sdk/ndk-bundle/sources/cxx-stl/llvm-libc++abi/include -isystem /Users/zhaoyifei/Library/Android/sdk/ndk-bundle/sysroot/usr/include/x86_64-linux-android -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -O0 -fno-limit-debug-info -fPIC"
   },
   "buildFiles": [
-    "/Users/zhaoyifei/github/StudioProjects/AirChat/app/../../../../Library/Android/sdk/ndk-bundle/build/cmake/platforms.cmake",
-    "/Users/zhaoyifei/github/StudioProjects/AirChat/app/CMakeLists.txt",
-    "/Users/zhaoyifei/github/StudioProjects/AirChat/app/../../../../Library/Android/sdk/ndk-bundle/build/cmake/android.toolchain.cmake"
+    "/Users/zhaoyifei/Downloads/github/AirChat/app/../../../../Library/Android/sdk/ndk-bundle/build/cmake/platforms.cmake",
+    "/Users/zhaoyifei/Downloads/github/AirChat/app/CMakeLists.txt",
+    "/Users/zhaoyifei/Downloads/github/AirChat/app/../../../../Library/Android/sdk/ndk-bundle/build/cmake/android.toolchain.cmake"
   ],
   "cleanCommands": [
-    "/Users/zhaoyifei/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake --build /Users/zhaoyifei/github/StudioProjects/AirChat/app/.externalNativeBuild/cmake/debug/x86_64 --target clean"
+    "/Users/zhaoyifei/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake --build /Users/zhaoyifei/Downloads/github/AirChat/app/.externalNativeBuild/cmake/debug/x86_64 --target clean"
   ],
   "libraries": {
     "native-lib-Debug-x86_64": {
-      "buildCommand": "/Users/zhaoyifei/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake --build /Users/zhaoyifei/github/StudioProjects/AirChat/app/.externalNativeBuild/cmake/debug/x86_64 --target native-lib",
+      "buildCommand": "/Users/zhaoyifei/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake --build /Users/zhaoyifei/Downloads/github/AirChat/app/.externalNativeBuild/cmake/debug/x86_64 --target native-lib",
       "buildType": "debug",
       "toolchain": "89761749",
       "abi": "x86_64",
       "artifactName": "native-lib",
       "files": [
         {
-          "src": "/Users/zhaoyifei/github/StudioProjects/AirChat/app/src/main/cpp/native-lib.cpp",
+          "src": "/Users/zhaoyifei/Downloads/github/AirChat/app/src/main/cpp/native-lib.cpp",
           "flagsOrdinal": 1,
           "workingDirectoryOrdinal": 0
         }
       ],
-      "output": "/Users/zhaoyifei/github/StudioProjects/AirChat/app/build/intermediates/cmake/debug/obj/x86_64/libnative-lib.so"
+      "output": "/Users/zhaoyifei/Downloads/github/AirChat/app/build/intermediates/cmake/debug/obj/x86_64/libnative-lib.so"
     }
   },
   "toolchains": {

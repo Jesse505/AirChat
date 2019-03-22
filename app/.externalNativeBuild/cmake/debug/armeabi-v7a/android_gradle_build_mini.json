@@ -1,18 +1,18 @@
 {
   "buildFiles": [
-    "/Users/zhaoyifei/github/StudioProjects/AirChat/app/../../../../Library/Android/sdk/ndk-bundle/build/cmake/platforms.cmake",
-    "/Users/zhaoyifei/github/StudioProjects/AirChat/app/CMakeLists.txt",
-    "/Users/zhaoyifei/github/StudioProjects/AirChat/app/../../../../Library/Android/sdk/ndk-bundle/build/cmake/android.toolchain.cmake"
+    "/Users/zhaoyifei/Downloads/github/AirChat/app/../../../../Library/Android/sdk/ndk-bundle/build/cmake/platforms.cmake",
+    "/Users/zhaoyifei/Downloads/github/AirChat/app/CMakeLists.txt",
+    "/Users/zhaoyifei/Downloads/github/AirChat/app/../../../../Library/Android/sdk/ndk-bundle/build/cmake/android.toolchain.cmake"
   ],
   "cleanCommands": [
-    "/Users/zhaoyifei/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake --build /Users/zhaoyifei/github/StudioProjects/AirChat/app/.externalNativeBuild/cmake/debug/armeabi-v7a --target clean"
+    "/Users/zhaoyifei/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake --build /Users/zhaoyifei/Downloads/github/AirChat/app/.externalNativeBuild/cmake/debug/armeabi-v7a --target clean"
   ],
   "libraries": {
     "native-lib-Debug-armeabi-v7a": {
       "artifactName": "native-lib",
-      "buildCommand": "/Users/zhaoyifei/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake --build /Users/zhaoyifei/github/StudioProjects/AirChat/app/.externalNativeBuild/cmake/debug/armeabi-v7a --target native-lib",
+      "buildCommand": "/Users/zhaoyifei/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake --build /Users/zhaoyifei/Downloads/github/AirChat/app/.externalNativeBuild/cmake/debug/armeabi-v7a --target native-lib",
       "abi": "armeabi-v7a",
-      "output": "/Users/zhaoyifei/github/StudioProjects/AirChat/app/build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-lib.so"
+      "output": "/Users/zhaoyifei/Downloads/github/AirChat/app/build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-lib.so"
     }
   }
 }

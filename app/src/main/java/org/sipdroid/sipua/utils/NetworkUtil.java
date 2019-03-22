@@ -15,7 +15,7 @@ import android.content.Context;
 
 public class NetworkUtil {
 	
-	public static int network_type = 1;
+	public static int network_type = 0;
 	public static final int WIFI = 0;
 	public static final int ADHOC_NETWORK = 1;
 

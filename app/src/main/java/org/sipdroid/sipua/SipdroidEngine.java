@@ -702,7 +702,10 @@ public class SipdroidEngine implements RegisterAgentListener {
 //		AdhocManager.getInstance(context).StartAdhoc();
 //      AdhocManager.getInstance(this).setShowText(showText);
 //		AdhocManager.getInstance(context).showContacts ();
-        context.startService(new Intent("com.leadcore.sipdroid.loginservice"));
+		Intent serviceIntnt = new Intent();
+		serviceIntnt.setAction("com.leadcore.sipdroid.loginservice");
+		serviceIntnt.setPackage(context.getPackageName());
+        context.startService(serviceIntnt);
 		
 		Receiver.onText(Receiver.REGISTER_NOTIFICATION,
 				getUIContext().getString(R.string.regok),R.drawable.sym_presence_available,0);
@@ -715,7 +718,9 @@ public class SipdroidEngine implements RegisterAgentListener {
 	
 	public void logout(Context context){
 //		AdhocManager.getInstance(context).StopAdhoc();
-		context.stopService(new Intent("com.leadcore.sipdroid.loginservice"));
+		Intent loginIntent = new Intent("com.leadcore.sipdroid.loginservice");
+		loginIntent.setPackage("org.sipdroid.sipua");
+		context.stopService(loginIntent);
 		//清除通知
 		Receiver.onText(Receiver.REGISTER_NOTIFICATION, null, 0, 0);
 		Receiver.showNotification(Receiver.SMS_GROUP_NOTIFICATION, null, null);

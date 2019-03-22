@@ -563,7 +563,9 @@ public class RtpStreamReceiver extends Thread {
 			return;
 		}
 
+		//发送包实例
 		byte[] buffer = new byte[BUFFER_SIZE+12];
+		//构建包实例
 		rtp_packet = new RtpPacket(buffer, 0);
 
 		if (DEBUG)
@@ -574,6 +576,7 @@ public class RtpStreamReceiver extends Thread {
 				org.sipdroid.sipua.ui.Settings.DEFAULT_BLUETOOTH));
 		restored = false;
 
+		//设置线程权限
 		android.os.Process.setThreadPriority(android.os.Process.THREAD_PRIORITY_AUDIO);
 		am = (AudioManager) Receiver.mContext.getSystemService(Context.AUDIO_SERVICE);
         cr = Receiver.mContext.getContentResolver();
@@ -582,9 +585,13 @@ public class RtpStreamReceiver extends Thread {
 		am.setVibrateSetting(AudioManager.VIBRATE_TYPE_RINGER,AudioManager.VIBRATE_SETTING_OFF);
 		am.setVibrateSetting(AudioManager.VIBRATE_TYPE_NOTIFICATION,AudioManager.VIBRATE_SETTING_OFF);
 		if (oldvol == -1) oldvol = am.getStreamVolume(AudioManager.STREAM_MUSIC);
+		//设置模式
 		initMode();
+		//设置音频编解码器
 		setCodec();
+		//编辑音频  由发送包解码后放到此处 然后调整后放入到声音播放器中
 		short lin[] = new short[BUFFER_SIZE];
+		//负责清空lin
 		short lin2[] = new short[BUFFER_SIZE];
 		int server, headroom, todo, len = 0, m = 1, expseq, getseq, vm = 1, gap, gseq;
 		ToneGenerator tg = new ToneGenerator(AudioManager.STREAM_VOICE_CALL,(int)(ToneGenerator.MAX_VOLUME*2*org.sipdroid.sipua.ui.Settings.getEarGain()));

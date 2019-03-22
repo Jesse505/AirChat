@@ -1,3 +1,3 @@
-/Users/zhaoyifei/github/StudioProjects/AirChat/app/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/rebuild_cache.dir
-/Users/zhaoyifei/github/StudioProjects/AirChat/app/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/edit_cache.dir
-/Users/zhaoyifei/github/StudioProjects/AirChat/app/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/native-lib.dir
+/Users/zhaoyifei/Downloads/github/AirChat/app/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/rebuild_cache.dir
+/Users/zhaoyifei/Downloads/github/AirChat/app/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/edit_cache.dir
+/Users/zhaoyifei/Downloads/github/AirChat/app/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/native-lib.dir
